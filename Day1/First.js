@@ -48,12 +48,12 @@ const header2 = React.createElement('h2',{fontSize:"20px",backgroundColor:"black
 
 
 
-const li1 = React.createElement('li',{},"Html");
-const li2 = React.createElement('li',{},"Css");
-const li3 = React.createElement('li',{},"Js");
+const li1 = React.createElement('li1',{},"Html");
+const li2 = React.createElement('li2',{},"Css");
+const li3 = React.createElement('li3',{},"Js");
 
 
-const Ul = React.createElement('ul',{fontSize:"15px",backgroundColor:"green",color:"white"},[li1,li2,l3]);
+const Ul = React.createElement('ul',{fontSize:"15px",backgroundColor:"green",color:"white"},[li1,li2,li3]);
 // Unorderlist
 //Html
 //Css
