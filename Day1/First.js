@@ -1,21 +1,6 @@
 // Create Element through js
 //46 commits
 //styles = {fontsize:"30px",backgroundcolor:"blue",color:"white"}
-const React ={
-    createElement: function(tag,styles,children){
-        const element = document.createElement(tag);
-
-        element.innerText = children;
-        for(let key in styles){
-            element.style[key] = styles[key];
-        }
-        return element;
-    }
-}
-
-const header1 = React.createElement('h1',{fontSize:"30px",backgroundColor:"blue",color:"white"},"Hello coder army");
-const header2 = React.createElement('h2',{fontSize:"20px",backgroundColor:"black",color:"white"},"Hello World");
-
 
 // const header1 = document.createElement("h1");
 // header1.innerText = "Hello World from js";
@@ -29,6 +14,44 @@ const header2 = React.createElement('h2',{fontSize:"20px",backgroundColor:"black
 // header2.style.fontSize = "20px";
 // header2.style.color = "white";
 
-const root = document.getElementById("root");
-root.append(header1);
-root.append(header2);
+// const root = document.getElementById("root");
+// root.append(header1);
+// root.append(header2);
+
+
+const React ={
+    createElement: function(tag,styles,children){
+        const element = document.createElement(tag);
+
+        element.innerText = children;
+        for(let key in styles){
+            element.style[key] = styles[key];
+        }
+        return element;
+    }
+}
+
+const ReactDom = {
+    render: function(element,root){
+        root.append(element);
+    }
+}
+
+const header1 = React.createElement('h1',{fontSize:"30px",backgroundColor:"blue",color:"white"},"Hello coder army");
+const header2 = React.createElement('h2',{fontSize:"20px",backgroundColor:"black",color:"white"},"Hello World");
+
+const li1 = React.createElement('li',{},"Html");
+
+const Ul = React.createElement('ul',{fontSize:"15px",backgroundColor:"green",color:"white"},"")
+// Unorderlist
+//Html
+//Css
+//Js
+
+
+
+
+
+
+ReactDom.render(header1,document.getElementById("root"));
+ReactDom.render(header2,document.getElementById("root"));
