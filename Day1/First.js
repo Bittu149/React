@@ -23,7 +23,13 @@ const React ={
     createElement: function(tag,styles,children){
         const element = document.createElement(tag);
 
+        if(typeof children === 'object'){
+            for(let val of children)
+            element.append(val);
+        }
+        else
         element.innerText = children;
+
         for(let key in styles){
             element.style[key] = styles[key];
         }
@@ -39,6 +45,8 @@ const ReactDom = {
 
 const header1 = React.createElement('h1',{fontSize:"30px",backgroundColor:"blue",color:"white"},"Hello coder army");
 const header2 = React.createElement('h2',{fontSize:"20px",backgroundColor:"black",color:"white"},"Hello World");
+
+
 
 const li1 = React.createElement('li',{},"Html");
 const li2 = React.createElement('li',{},"Css");
@@ -58,3 +66,4 @@ const Ul = React.createElement('ul',{fontSize:"15px",backgroundColor:"green",col
 
 ReactDom.render(header1,document.getElementById("root"));
 ReactDom.render(header2,document.getElementById("root"));
+ReactDom.render(Ul,document.getElementById("root"));
