@@ -1,0 +1,24 @@
+/* Basic page layout and root centering */
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f5f7fa;
+}
+
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	gap: 12px;
+}
+
+/* Small reset for headings created by JS */
+h1, h2 {
+	margin: 0;
+	padding: 12px 18px;
+	border-radius: 6px;
+}
+
