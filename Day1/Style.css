@@ -1,4 +1,4 @@
-/* Basic page layout and root centering */
+/* Basic page layout and root centering
 html, body {
 	height: 100%;
 	margin: 0;
@@ -16,9 +16,9 @@ html, body {
 }
 
 /* Small reset for headings created by JS */
-h1, h2 {
+/* h1, h2 {
 	margin: 0;
 	padding: 12px 18px;
 	border-radius: 6px;
 }
-
+  */
