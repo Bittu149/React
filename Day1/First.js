@@ -1,0 +1,9 @@
+// Create Element through js
+const header1 = document.createElement("h1");
+header1.innerText = "Hello World from js";
+header1.style.backgroundColor = "blue";
+header1.style.fontSize = "30px";
+header1.style.color = "white";
+
+const root = document.getElementById("root");
+root.append(header1);
