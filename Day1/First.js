@@ -41,6 +41,9 @@ const header1 = React.createElement('h1',{fontSize:"30px",backgroundColor:"blue"
 const header2 = React.createElement('h2',{fontSize:"20px",backgroundColor:"black",color:"white"},"Hello World");
 
 const li1 = React.createElement('li',{},"Html");
+const li2 = React.createElement('li',{},"Css");
+const li3 = React.createElement('li',{},"Js");
+
 
 const Ul = React.createElement('ul',{fontSize:"15px",backgroundColor:"green",color:"white"},"")
 // Unorderlist
